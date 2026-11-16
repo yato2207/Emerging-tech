@@ -165,6 +165,12 @@ export default function App() {
             The Trust Desk · Group 1, Section B, DMS IIT Delhi (November 2026)
           </span>
           <div className="flex items-center gap-4">
+            <a
+              href="/trust-desk.html"
+              className="hover:text-[#102342] hover:underline"
+            >
+              Basic HTML &amp; CSS Version
+            </a>
             <button
               type="button"
               onClick={() => handleNavigate('team')}
