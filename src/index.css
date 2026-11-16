@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-imperial: #102342;
+    --navy: #1B365D;
+    --gold: #D9A21B;
+    --gold-burnished: #B8830D;
+    --gold-soft: #FBF4E2;
+    --canvas: #F8F6F0;
+    --surface: #FFFFFF;
+    --ink: #111C30;
+    --ink-muted: #52607A;
+    --border-hairline: #DED8CA;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, .font-display {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+
+  h3, .font-ui {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  .font-mono-data {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #D9A21B;
+    outline-offset: 2px;
+  }
+}
+
+.grand-card {
+  background: #FFFFFF;
+  border: 1px solid #DED8CA;
+  box-shadow: 0 1px 2px rgba(16, 35, 66, 0.04), 0 12px 30px -16px rgba(16, 35, 66, 0.12);
+}
+
+.grand-navy-surface {
+  background: radial-gradient(circle at 85% 15%, rgba(217, 162, 27, 0.14), transparent 45%),
+    linear-gradient(135deg, #0E1F3A 0%, #1B365D 100%);
+}
+
+/* Smooth range input styling */
+input[type='range'].trust-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #DED8CA;
+  cursor: pointer;
+}
+
+input[type='range'].trust-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #102342;
+  border: 2px solid #D9A21B;
+  box-shadow: 0 2px 6px rgba(16, 35, 66, 0.28);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type='range'].trust-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+input[type='range'].trust-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #102342;
+  border: 2px solid #D9A21B;
+  box-shadow: 0 2px 6px rgba(16, 35, 66, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

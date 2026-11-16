@@ -1,0 +1,6 @@
+{
+  "name": "The Trust Desk",
+  "description": "An interactive MBA research simulation on Enterprise LLM Adoption and B2B Trust in Cybersecurity (DMS, IIT Delhi, November 2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
